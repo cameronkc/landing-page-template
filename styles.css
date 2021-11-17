@@ -9,7 +9,10 @@
 
 /* Light Theme */
 
-body.light-theme .hero h1, body.light-theme .hero p, body.light-theme .about h1, body.light-theme .about p, body.light-theme .about-services, body.light-theme .promotion h1, body.light-theme .promo-text, body.light-theme .promotion p, body.light-theme .portfolio h1, body.light-theme .contact h1, body.light-theme .footer, body.light-theme .copyright, body.light-theme .fa-bars{
+body.light-theme .hero h1, body.light-theme .hero p, body.light-theme .about h1, 
+body.light-theme .about p, body.light-theme .about-services, body.light-theme .promotion h1, 
+body.light-theme .promo-text, body.light-theme .promotion p, body.light-theme .portfolio h1, 
+body.light-theme .contact h1, body.light-theme .footer, body.light-theme .copyright, body.light-theme .fa-bars{
     color: black;
 }
 body.light-theme .stars, body.light-theme .twinkling, body.light-theme .clouds{
@@ -121,7 +124,7 @@ body.light-theme .stars, body.light-theme .twinkling, body.light-theme .clouds{
     height: 6vh;
     width: 12vh;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     background-color: lightblue;
     border-style: solid;    
@@ -130,9 +133,6 @@ body.light-theme .stars, body.light-theme .twinkling, body.light-theme .clouds{
     border-radius: 0 1em 1em 0;
 }
 
-.dark-light-mode {
-    padding-left: 0.2em;
-}
 .label {
     box-sizing: border-box;
     background-color: black;
@@ -186,6 +186,7 @@ body.light-theme .stars, body.light-theme .twinkling, body.light-theme .clouds{
 @media screen and (min-width: 800px) {
     .switch-banner {
         width: 12vh;
+        max-width: 12vh;
     }
   }
 
@@ -220,6 +221,7 @@ body.light-theme .stars, body.light-theme .twinkling, body.light-theme .clouds{
 .hero-btn, .hero-btn::after {
     overflow: hidden;
     width: 40vh;
+    min-width: 30vh;
     font-size: 24px;
     background: linear-gradient(45deg, transparent 5%, #5F89E4 5%);
     border: 0;
@@ -304,7 +306,7 @@ body.light-theme .stars, body.light-theme .twinkling, body.light-theme .clouds{
     }
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1500px) {
     .hero {
       display: flex;
     }
@@ -320,10 +322,11 @@ body.light-theme .stars, body.light-theme .twinkling, body.light-theme .clouds{
     .hero-img {
         margin-top: -7em;
         align-items: center;
+        min-width: 40vh;
     }
 
     .hero-img img {
-        height: 100vh;
+        height: 120vh;
         width: 120vw;
     }
   }
